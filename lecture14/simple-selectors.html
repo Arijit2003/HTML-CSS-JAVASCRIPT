@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Simple Selectors</title>
+	<style>
+		p,h1{
+			color: blue;
+			text-align: center;	
+		}
+		h2{
+			color: red;
+			text-align: center;
+		}
+		.highlight{
+			font-size: 20px;
+			font-weight: bold;
+			font-style: italic;
+			background-color: yellow;
+			opacity: .7;
+		}
+		#mainPoint{
+			color: blue;
+			text-align: center;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<h1>Simple Selectors</h1>
+
+	<h2>Subheading 1(h2)</h2>
+	<p class="highlight">CSS selectors are used to determine which HTML element, or set of elements, to apply the CSS declarations to. The browser uses its selector API to traverse the DOM or Document Object Model, and pick out the elements matching the selector. Now crafting a selector is a great skill to have and not only for styling using CSS. That's because a lot of JavaScript libraries out there use the browser selector API to attach behavior and data to HTML elements. Much in the same way that CSS applies style to those elements. In this lecture, we're going to talk about three different types of selectors, element, class, and id selector.</p>
+
+	<h2>Subheading 2(h2)</h2>
+	<p>First element selector, the element selector is just you specifying the element name. For example, in this case, p for paragraph says that every paragraph in our HTML document should be colored blue.</p>
+
+	<h2>Subheading 3 (h2)</h2>
+	<p>As an example, if we specified p paragraph and color blue, that means every paragraph in the HTML document will have its content's text be blue. Obviously, this really doesn't affect any other elements that contain text in them. For example, we can have a div element that contains text but that text will not be affected by our CSS rule that specifies that the paragraph tag should have content text colored blue.</p>
+
+	<div id="mainPoint">This is a &copy; copyright</div>
+
+</body>
+</html>
