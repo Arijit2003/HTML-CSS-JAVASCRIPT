@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Enternal Style Placement</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>External Style Placement</h1>
+	<center><p>Your choice for placing styles in one versus another place doesn't only affect how reusable the styles are, but it also affects which style declarations override other style declarations. Let's jump into the code and take a look at an example. Okay, on the Sublime Text, and I'm looking at the file called styleplacement.html. Let me go ahead and quickly rearrange the screen, so you can see the browser and the code editor at the same time. So here's our HTML document, and so far, we've been specifying all of our styles inside the style tag that sits inside of the head tag of our HTML document.</p>
+
+	<p>And in this case, we're specifying that every h2 in our HTML document should have the text color maroon. As you could see that subheadings, the h2's, are, in fact, maroon. However, there are other places that you could specify a CSS style. For example, you could specify a CSS style directly on the element by providing the style attribute and the CSS styles that should apply to that style. The only thing that's missing from these styles is the target, and it's for a good reason, since we're inside the element, so we don't really need a target any more. But the style decorations are exactly the same as before, and they're also terminated by semicolons, and you could put here more than one, just keep terminating them with semicolons.</p>
+
+	<p >In this case, this I am centered content, is text aligned center. And as you can see in the page, it is in fact getting centered in the page. This is called inline styling, and as you might have guessed, this is the least reusable way of styling elements there is. So for example, if you wanted to style something similarly within the same page, you would literally have to copy and paste the styles somewhere else in order to achieve that. For that reason, this is the least preferred method of styling, and you should really try to stay as far away from this as possible. </p><center>
+</body>
+</html>

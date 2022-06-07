@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Two Column Layout Design</title>
+	<style>
+		p{
+			box-sizing: border-box;
+			width: 50%;
+			float: left;
+			padding: 5px 5px 5px 5px;
+			border: 3px brown solid;
+			
+		}
+	</style>
+</head>
+<body>
+	<h1>Two column Layout design</h1>
+	<p>In this lecture we're going to talk about positioning elements by floating them. Now knowing how to properly float elements is an essential skill to have, and this is partially because most of the UIs today, web UIs today that are made, are made by floating the elements. In fact, by the end of this lecture, we're going to create a two column flexible design where the columns will be flexible as we expand and contract the browser. So let's jump into the code editor and see how this works. Okay, so we are in sublime text and we're looking at the file named floating before that HTML. So let's go over the structure of this HTML document real quick. We have our regular h1 here just to announce what that is, and then we have a div with four paragraph tags and a section tag with some text in it, and the paragraph tags ID p1, p2, p3, p4. If you</p>
+
+
+
+	<p>Okay, so here are the four paragraph boxes that we had. Okay, so let's go ahead and float the very first paragraph box to the right. We'll say, float: right, and we'll go ahead and refresh the page, and you see that the box jumped all the way to the right, top edge of the containing element. Now, a couple of quick things to notice right away. First, is that you could see that the rest of them moved up as if the maroon box isn't there anymore. And the reason this is happening is because when you float elements, the browser takes them out of the regular document flow. And this is why the second paragraph box moves into the original spot of the first one, because as far as the regular document flow is concerned, that spot became empty. Second thing to notice is that even though each one of these paragraph boxes has a margin around them, as you can see that there's a margin between each one of them right here, that margin collapses as we've learned before when it is touching the margin of another element. However, when it comes to floated elements, the margins never collapse. And this is why you now seeing the margin around the element on top. Also, if you paid close attention, you will notice that the blue, light blue box, the development became shorter. To really illustrate what's going on, let's go ahead and remove the float right, and instead make every single paragraph box float to the left. And to ensure that the boxes aren't squished right against the other, let's go ahead and give it a margin-right of let's say 10 px. Let's go ahead and refresh the page and you could see that now they're all floated to the left and there's a ten pixel margin between them. However, what happened to our div? Our div seemed to have completely collapsed and the only thing that's really keeping it open at all is the text that we've put in here. This is happening because of the same point that I made before. When you float elements it takes them out of the regular document flow, therefore it collapses and hide, and surrounds the last section element which has actually some text in it. In order to correct it, we need to tell the browser that when it comes to this section element, the browser should resume the regular document flow. And the way that we do that is by using the clear property. So let's go ahead and go to our styling and define section target and wel say, clear: left. And what this is doing is telling the browser that the section element is announcing that nothing should be allowed to be floating to the left of it. And since every single paragraph that we've been floating is floating to the left, when we save it and refresh, this should jump right below here, and so it does. And this is not restricted to the non floated elements. We can ask a floated element to resume its regular document flow, and then</p>
+</body>
+</html>
