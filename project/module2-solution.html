@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		*{
+			box-sizing: border-box;
+			font-family: cursive;
+		}
+		body{
+			padding: 0px;
+			border: 5px black solid;
+			margin: 0px;
+		}
+		h1{
+			font-size: 175%;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 40px;
+			margin-top: 40px;
+
+		}
+
+		p{
+			
+			width: 90%;
+			
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 40px;
+		}
+		.row{
+			width: 100%;
+			
+
+
+		}
+		div.row div{
+			
+			border: 3px solid black;
+			background-color: grey;
+			margin-bottom: 30px;
+			margin-left: 15px;
+			margin-right: 15px;
+			position: relative;
+		}
+		section{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			border: 3px black solid;
+			width: 90px;
+			text-align: center;
+			margin: -2px;
+			font-size: 125%;
+		}
+		#sec1{
+			background-color: hotpink;
+		}
+		#sec2{
+			background-color: red;
+		}
+		#sec3{
+			background-color: #ebd334;
+		}
+		footer{
+			background-color: grey;
+			border: 3px black solid;
+			width: 100%;
+			height: 30px;
+			margin-top: 43px;
+			margin-bottom: 0px;
+			clear: left;
+			
+			
+		}
+		@media(max-width: 767px){
+			.col-sm-12{
+				width: 80%;
+				
+				border: 3px solid black;
+			}
+			div.row div
+			{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		@media(min-width: 768px) and (max-width: 991px){
+			.col-md-6,.col-md-12{
+				float: left;
+				border: 2px solid black;
+				
+			}
+			.col-md-6{
+				width: 46%;
+			}
+			.col-md-12{
+				width: 96%;
+			}
+			footer{
+				margin-top: 585px;
+			}
+		}
+		@media(min-width: 992px){
+			.col-lg-4,.col-lg-5{
+				float: left;
+				border: 2px solid black;
+				
+			}
+			.col-lg-4{
+				width: 30%;
+			}
+			.col-lg-5{
+				width: 30.666%;
+			}
+			
+			footer{
+				margin-top: 585px;
+			}
+			div.row div{
+				margin-left: 16px;
+				margin-right: 14px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Our Menu</h1>
+	<div class="row">
+		<div class="col-md-6  col-lg-4  col-sm-12">
+			<p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore manga aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<section id="sec1">Chicken</section>
+		</div>
+		<div class="col-md-6  col-lg-4  col-sm-12">
+			<p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore manga aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+			<section id="sec2">Beef</section>
+		</div>
+		<div class="col-md-12  col-lg-5  col-sm-12">
+			<p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore manga aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+			<section id="sec3">Sushi</section>
+		</div>
+		
+	</div>
+	<footer></footer>
+</body>
+
+</html>
